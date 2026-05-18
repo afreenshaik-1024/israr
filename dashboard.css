@@ -330,4 +330,28 @@ body{
     margin-top: 0;
     padding-top: 0;
 }
+/* Sidebar sticky */
+
+.sidebar{
+    position:sticky;
+    top:0;
+    height:100vh;
+}
+
+
+/* Top navbar */
+
+.top-navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:#ebe5dc;
+    padding:15px 0;
+    margin-bottom:20px;
+}
 

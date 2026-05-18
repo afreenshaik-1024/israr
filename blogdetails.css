@@ -1,0 +1,322 @@
+
+
+
+.blog-hero{
+    width: 100%;
+    padding: 11%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url(images/blog2.jpg);
+
+}
+
+.blog-hero::before{
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: rgba(179,107,61,0.08);
+    border-radius: 50%;
+    filter: blur(80px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.blog-hero  
+{
+    position: relative;
+    z-index: 2;
+}
+
+/* ===== BREADCRUMB ===== */
+
+.breadcrumb{
+    margin-bottom: 35px;
+    margin-top: 60px;
+}
+
+.breadcrumb a{
+    text-decoration: none;
+    color: #090908;
+    font-size: 30px;
+}
+
+.breadcrumb span{
+    margin: 0 10px;
+    color: #b36b3d;
+}
+
+.breadcrumb .active{
+    color: #8f522c;
+    font-weight: 600;
+}
+
+/* ===== TOP TAG ===== */
+
+.hero-tag{
+    color: #8f522c;
+    font-size: 16px;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* ===== HEADING ===== */
+
+.blog-hero h1{
+    font-size: 60px;
+    line-height: 1.1;
+    color: #3d2b1f;
+    margin-bottom: 35px;
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+/* ===== DESCRIPTION ===== */
+
+.blog-hero p{
+    max-width: 950px;
+    margin: auto;
+    font-size: 28px;
+    line-height: 1.8;
+    color: #0b0b0a;
+    margin-bottom: 55px;
+}
+
+/* ===== BUTTONS ===== */
+
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.hero-buttons button{
+    padding: 16px 30px;
+    border-radius: 40px;
+    border: 1px solid #e4d6c8;
+    background: white;
+    color: #7b6859;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-buttons button:hover{
+    background: #eadbcf;
+    color: #8f522c;
+}
+
+/* ===== ACTIVE BUTTON ===== */
+
+.hero-buttons .active-btn{
+    background: #b36b3d;
+    color: white;
+    border: none;
+}
+
+.hero-buttons .active-btn:hover{
+    background: #8f522c;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:768px){
+
+    .blog-hero{
+        padding: 100px 6% 80px;
+    }
+
+    .blog-hero h1{
+        font-size: 52px;
+    }
+
+    .blog-hero p{
+        font-size: 18px;
+    }
+
+    .hero-buttons{
+        gap: 12px;
+    }
+
+    .hero-buttons button{
+        font-size: 15px;
+        padding: 14px 22px;
+    }
+
+}
+
+.pottery-basics{
+    padding:90px 8%;
+    background:#f8f1e9;
+}
+
+.basics-title{
+    text-align:center;
+    margin-bottom:60px;
+    animation:fadeDown 1s ease;
+}
+
+.basics-title h1{
+    font-size:50px;
+    color:#8B5E3C;
+    margin-bottom:15px;
+}
+
+.basics-title p{
+    font-size:18px;
+    color:#666;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.basics-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.basic-card{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+    opacity:0;
+    transform:translateY(50px);
+
+    animation:cardUp 1s ease forwards;
+    transition:0.4s;
+}
+
+.basic-card:nth-child(1){
+    animation-delay:0.2s;
+}
+
+.basic-card:nth-child(2){
+    animation-delay:0.4s;
+}
+
+.basic-card:nth-child(3){
+    animation-delay:0.6s;
+}
+
+.basic-card:nth-child(4){
+    animation-delay:0.8s;
+}
+
+.basic-card:hover{
+    transform:translateY(-12px) scale(1.05);
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+
+.basic-card h3{
+    color:#8B5E3C;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.basic-card p{
+    color:#666;
+    font-size:16px;
+    line-height:1.7;
+}
+
+
+/* Animations */
+
+@keyframes cardUp{
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeDown{
+    from{
+        opacity:0;
+        transform:translateY(-30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+.basics-title h1{
+    font-size:35px;
+}
+
+.basics-title p{
+    font-size:16px;
+}
+
+.basic-card{
+    padding:25px;
+}
+
+}
+
+.ceramic-art{
+    padding:90px 10%;
+    background:#f8f1e9;
+}
+
+.article-content{
+    background:#fff;
+    padding:50px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.article-content h1{
+    font-size:48px;
+    color:#8B5E3C;
+    margin-bottom:25px;
+}
+
+.article-content p{
+    font-size:18px;
+    color:#555;
+    line-height:1.9;
+    margin-bottom:20px;
+    text-align:justify;
+}
+
+.article-content:hover{
+    transform:translateY(-8px);
+    transition:0.5s;
+}
+
+@media(max-width:768px){
+
+.article-content{
+    padding:30px;
+}
+
+.article-content h1{
+    font-size:35px;
+}
+
+.article-content p{
+    font-size:16px;
+}
+
+}
