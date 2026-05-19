@@ -7,6 +7,8 @@
   <title>Pottery Website</title>
 
   <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
    
 </head>
 <body>
@@ -44,11 +46,19 @@
     <input type="text" placeholder="Search products, orders, workshops...">
   </div>
 
-  <div class="header-actions">
-    <button id="dirToggle">RTL</button>
-    <button id="themeToggle">🌙</button>
-    <button class="notify-btn">🔔</button>
-  </div>
+ <div class="header-actions">
+
+<button id="dirToggle">RTL</button>
+
+<button id="themeToggle">
+   <i class="fa-solid fa-moon"></i>
+</button>
+
+<button class="notify-btn">
+   🔔
+</button>
+
+</div>
 </div>
 	
 
@@ -166,22 +176,30 @@
 
   <script src="script.js"></script>
   <script>
-  const html = document.documentElement;
+ const html = document.documentElement;
 const themeToggle = document.getElementById("themeToggle");
 const dirToggle = document.getElementById("dirToggle");
 
 themeToggle.addEventListener("click", () => {
-  const isDark = html.getAttribute("data-theme") === "dark";
 
-  html.setAttribute("data-theme", isDark ? "light" : "dark");
-  themeToggle.textContent = isDark ? "🌙" : "☀️";
+const isDark = html.getAttribute("data-theme") === "dark";
+
+html.setAttribute("data-theme", isDark ? "light" : "dark");
+
+themeToggle.innerHTML = isDark
+? '<i class="fa-solid fa-moon"></i>'
+: '<i class="fa-solid fa-sun"></i>';
+
 });
 
 dirToggle.addEventListener("click", () => {
-  const isRTL = html.getAttribute("dir") === "rtl";
 
-  html.setAttribute("dir", isRTL ? "ltr" : "rtl");
-  dirToggle.textContent = isRTL ? "RTL" : "LTR";
+const isRTL = html.getAttribute("dir") === "rtl";
+
+html.setAttribute("dir", isRTL ? "ltr" : "rtl");
+
+dirToggle.textContent = isRTL ? "RTL" : "LTR";
+
 });
 </script>
 </body>
