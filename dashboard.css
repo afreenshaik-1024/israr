@@ -154,6 +154,13 @@ button,
   cursor:pointer;
   border:1px solid #ead8c8;
   box-shadow:0 10px 25px rgba(74,43,25,.07);
+    display:flex;              /* add */
+  justify-content:center;    /* add */
+  align-items:center;  
+}
+.header-actions button i{
+  color:#fff;                /* add */
+  font-size:18px;            /* add */
 }
 
 .header-actions button:hover{
@@ -388,7 +395,7 @@ button,
 [data-theme="dark"] .header-actions button{
   background:#2a1b14;
   border-color:#4a3024;
-  color:#f8eadd;
+  color:#f1c59b;
 }
 
 [data-theme="dark"] .topbar h2,
@@ -576,4 +583,23 @@ gap:12px;
 align-items:flex-start;
 }
 
+}
+
+.logo-btn,
+.notify-btn{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.logo-btn svg,
+.notify-btn svg{
+width:20px;
+height:20px;
+color:#fff;
+}
+
+.dark .logo-btn svg,
+.dark .notify-btn svg{
+color:#fff;
 }
