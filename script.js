@@ -74,3 +74,75 @@ function openMenu(){
 
 }
 
+let menu=document.querySelector(".menu-btn");
+
+menu.onclick=function(){
+
+document
+.querySelector(".sidebar")
+.classList.toggle("show");
+
+}
+
+function darkMode(){
+
+document.body.classList.toggle("dark");
+
+}
+
+
+function enableRTL(){
+
+let html=document.documentElement;
+
+html.dir=
+html.dir==="rtl"
+?"ltr":"rtl";
+
+}
+
+
+
+new Chart(
+document.getElementById("sales"),
+{
+
+type:"line",
+
+data:{
+
+labels:["Jan","Feb","Mar","Apr","May","Jun"],
+
+datasets:[{
+
+data:[7000,11000,9000,13000,11000,18000],
+
+borderWidth:3
+
+}]
+
+}
+
+});
+
+
+
+new Chart(
+document.getElementById("registration"),
+{
+
+type:"bar",
+
+data:{
+
+labels:["Jan","Feb","Mar","Apr","May"],
+
+datasets:[{
+
+data:[30,50,70,90,80]
+
+}]
+
+}
+
+});

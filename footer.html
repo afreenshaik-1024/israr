@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<title>Wine Bar Dashboard</title>
+ 
+<link rel="stylesheet"
+
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+ 
+</head>
+ 
+<body>
+ 
+<div class="dashboard">
+ 
+<!-- SIDEBAR -->
+ 
+<div class="sidebar">
+ 
+<div class="logo">
+<a href="index.html">
+<span>WineBar </span>
+</a>
+</div>
+ 
+<div class="menu-title">MAIN</div>
+ 
+<ul class="menu">
+ 
+<li>
+<a href="#" class="active">
+<div class="menu-left">
+<i class="fa-solid fa-chart-line"></i>
+
+Dashboard
+</div>
+</a>
+</li>
+ 
+<li>
+<a href="#">
+<div class="menu-left">
+<i class="fa-solid fa-wine-glass"></i>
+
+Wine Menu
+</div>
+<span class="badge">24</span>
+</a>
+</li>
+ 
+<li>
+<a href="#">
+<div class="menu-left">
+<i class="fa-solid fa-calendar-check"></i>
+
+Reservations
+</div>
+<span class="badge">12</span>
+</a>
+</li>
+ 
+<li>
+<a href="#">
+<div class="menu-left">
+<i class="fa-solid fa-users"></i>
+
+Customers
+</div>
+</a>
+</li>
+ 
+</ul>
+ 
+<div class="menu-title">MANAGEMENT</div>
+ 
+<ul class="menu">
+ 
+<li>
+<a href="#">
+<div class="menu-left">
+<i class="fa-solid fa-music"></i>
+
+Live Events
+</div>
+</a>
+</li>
+ 
+<li>
+<a href="#">
+<div class="menu-left">
+<i class="fa-solid fa-comments"></i>
+
+Messages
+</div>
+<span class="badge">5</span>
+</a>
+</li>
+ 
+<li>
+<a href="#">
+<div class="menu-left">
+<i class="fa-solid fa-gear"></i>
+
+Settings
+</div>
+</a>
+</li>
+ 
+</ul>
+ 
+<div class="admin-box">
+ 
+<div class="admin-top">
+ 
+<div class="admin-icon">
+
+A
+</div>
+ 
+<div>
+<h3>Admin</h3>
+<p>Wine Bar Manager</p>
+</div>
+ 
+</div>
+ 
+<a href="#" class="logout-btn">
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Logout
+</a>
+ 
+</div>
+ 
+</div>
+ 
+<!-- MAIN CONTENT -->
+ 
+<div class="main-content">
+ 
+<div class="topbar">
+ 
+<div class="topbar-left">
+ 
+<h1>Dashboard</h1>
+ 
+<p>
+
+Manage reservations, wines, and luxury services.
+</p>
+ 
+</div>
+ 
+<div class="top-actions">
+ 
+<div class="search-box">
+ 
+<i class="fa-solid fa-magnifying-glass"></i>
+ 
+<input type="text" placeholder="Search..." />
+ 
+</div>
+ 
+<!-- NOTIFICATION -->
+ 
+<div class="top-btn">
+<i class="fa-regular fa-bell"></i>
+</div>
+ 
+<!-- DARK MODE BUTTON -->
+ 
+<div class="top-btn" id="themeToggle">
+<i class="fa-solid fa-moon"></i>
+</div>
+ 
+<!-- LTR BUTTON -->
+ 
+<div class="top-btn">
+
+LTR
+</div>
+ 
+</div>
+ 
+</div>
+ 
+<!-- STATS -->
+ 
+<div class="stats">
+ 
+<div class="card">
+ 
+<div>
+ 
+<h3>Total Reservations</h3>
+ 
+<h2>248</h2>
+ 
+<div class="tag">+12%</div>
+ 
+</div>
+ 
+<div class="card-icon">
+<i class="fa-solid fa-calendar-check"></i>
+</div>
+ 
+</div>
+ 
+<div class="card">
+ 
+<div>
+ 
+<h3>Revenue</h3>
+ 
+<h2>$18K</h2>
+ 
+<div class="tag">+8%</div>
+ 
+</div>
+ 
+<div class="card-icon">
+<i class="fa-solid fa-dollar-sign"></i>
+</div>
+ 
+</div>
+ 
+<div class="card">
+ 
+<div>
+ 
+<h3>Wine Collections</h3>
+ 
+<h2>34</h2>
+ 
+<div class="tag">Updated</div>
+ 
+</div>
+ 
+<div class="card-icon">
+<i class="fa-solid fa-wine-bottle"></i>
+</div>
+ 
+</div>
+ 
+<div class="card">
+ 
+<div>
+ 
+<h3>Guest Rating</h3>
+ 
+<h2>4.9</h2>
+ 
+<div class="tag">Excellent</div>
+ 
+</div>
+ 
+<div class="card-icon">
+<i class="fa-solid fa-star"></i>
+</div>
+ 
+</div>
+ 
+</div>
+ 
+<!-- GRAPH + ACTIVITY -->
+ 
+<div class="dashboard-grid">
+ 
+<div class="sales-box">
+ 
+<h2>Sales Overview</h2>
+ 
+<div class="chart">
+ 
+<svg viewBox="0 0 700 300">
+ 
+<polyline
+
+fill="none"
+
+stroke="#37d56c"
+
+stroke-width="4"
+
+points="40,220 150,180 260,210 370,150 480,175 590,110 660,120"/>
+ 
+<circle cx="660" cy="120" r="7" fill="#37d56c"/>
+ 
+</svg>
+ 
+</div>
+ 
+</div>
+ 
+<div class="activity-box">
+ 
+<h2>Latest Activity</h2>
+ 
+<div class="activity">
+ 
+<i class="fa-solid fa-wine-glass"></i>
+ 
+<div>
+<h3>New Wine Added</h3>
+<p>Italian wine collection updated.</p>
+</div>
+ 
+</div>
+ 
+<div class="activity">
+ 
+<i class="fa-solid fa-calendar-check"></i>
+ 
+<div>
+<h3>Reservation Confirmed</h3>
+<p>VIP table booked successfully.</p>
+</div>
+ 
+</div>
+ 
+<div class="activity">
+ 
+<i class="fa-solid fa-star"></i>
+ 
+<div>
+<h3>5★ Review</h3>
+<p>Customer rated dining service.</p>
+</div>
+ 
+</div>
+ 
+</div>
+ 
+</div>
+ 
+<!-- TABLE -->
+ 
+<div class="table-box">
+ 
+<h2>Recent Reservations</h2>
+ 
+<table>
+ 
+<tr>
+<th>ID</th>
+<th>Guest</th>
+<th>Service</th>
+<th>Status</th>
+<th>Amount</th>
+<th>Date</th>
+</tr>
+ 
+<tr>
+<td>WB-1021</td>
+<td>Rahul</td>
+<td>VIP Lounge</td>
+<td><span class="status paid">Confirmed</span></td>
+<td>$250</td>
+<td>May 28</td>
+</tr>
+ 
+<tr>
+<td>WB-1022</td>
+<td>Priya</td>
+<td>Wine Tasting</td>
+<td><span class="status pending">Pending</span></td>
+<td>$180</td>
+<td>May 29</td>
+</tr>
+ 
+<tr>
+<td>WB-1023</td>
+<td>David</td>
+<td>Luxury Dinner</td>
+<td><span class="status paid">Confirmed</span></td>
+<td>$420</td>
+<td>May 30</td>
+</tr>
+ 
+</table>
+ 
+</div>
+ 
+</div>
+ 
+</div>
+ 
+<script>
+ 
+const themeToggle = document.getElementById("themeToggle");
+ 
+themeToggle.addEventListener("click", () => {
+ 
+document.body.classList.toggle("light-mode");
+ 
+const icon = themeToggle.querySelector("i");
+ 
+if(document.body.classList.contains("light-mode")){
+
+  icon.classList.remove("fa-moon");
+
+  icon.classList.add("fa-sun");
+
+}
+
+else{
+
+  icon.classList.remove("fa-sun");
+
+  icon.classList.add("fa-moon");
+
+}
+ 
+});
+ 
+</script>
+ 
+</body>
+</html>
+ 
