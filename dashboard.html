@@ -14,28 +14,36 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <body>
  <div class="dashboard">
 
-    <aside class="sidebar">
-     <a href="index.html" class="logo">
-    <img src="images/logo.png" alt="Pottery Logo">
+
+
+<!-- Sidebar -->
+
+<div class="sidebar" id="sidebar">
+
+<div class="logo">
+
+<a href="index.html">
+<img src="images/logo.png" alt="image">
 </a>
 
-      <ul>
-        <li class="active">Dashboard</li>
-        <li>Orders</li>
-        <li>Gallery</li>
-        <li>Workshops</li>
-        <li>Customers</li>
-        <li>Settings</li>
-      </ul>
+</div>
 
-      <div class="sidebar-box">
-        <h3>Studio Insights</h3>
-        <p>
-          Manage pottery sales, ceramic products.
-        </p>
-      </div>
-    </aside>
+<ul>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="orders.html">Orders</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="workshops.html">Workshops</a></li>
+<li><a href="customers.html">Customers</a></li>
+<li><a href="settings.html">Settings</a></li>
+<li><a href="login.html">Login</a></li>
+</ul>
 
+</div>
+  <!-- Hamburger -->
+
+<div class="hamburger" id="menuBtn">
+   <i class="fa-solid fa-bars"></i>
+</div>
 
     <main class="main-content">
 	
@@ -64,6 +72,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
       <div class="topbar">
         <div>
+          <h1>welcome back Thomas</h1><br><br>
           <span>Pottery & Ceramic Studio</span>
           <h2>Creative Dashboard</h2>
         </div>
@@ -199,6 +208,14 @@ const isRTL = html.getAttribute("dir") === "rtl";
 html.setAttribute("dir", isRTL ? "ltr" : "rtl");
 
 dirToggle.textContent = isRTL ? "RTL" : "LTR";
+
+});
+const menuBtn=document.getElementById("menuBtn");
+const sidebar=document.getElementById("sidebar");
+
+menuBtn.addEventListener("click",()=>{
+
+sidebar.classList.toggle("active");
 
 });
 </script>

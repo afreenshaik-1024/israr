@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pottery Website</title>
+
+  <link rel="stylesheet" href="orders.css">
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   
+</head>
+<body>
+ <div class="dashboard">
+
+    <aside class="sidebar">
+     <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="Pottery Logo">
+</a>
+
+     <ul>
+    <li class="active">
+        <a href="dashboard.html">Dashboard</a>
+    </li>
+
+    <li>
+        <a href="orders.html">Orders</a>
+    </li>
+
+    <li>
+        <a href="gallery.html">Gallery</a>
+    </li>
+
+    <li>
+        <a href="workshop.html">Workshops</a>
+    </li>
+
+    <li>
+        <a href="customers.html">Customers</a>
+    </li>
+
+    <li>
+        <a href="settings.html">Settings</a>
+    </li>
+
+    <li>
+        <a href="login.html">Login</a>
+    </li>
+</ul>
+
+    </aside>
+
+
+    <main class="main-content">
+	
+	
+	<div class="dashboard-header">
+  <div class="search-box">
+    <span>⌕</span>
+    <input type="text" placeholder="Search products, orders, workshops...">
+  </div>
+
+ <div class="header-actions">
+
+<button id="dirToggle">RTL</button>
+
+<button id="themeToggle">
+   <i class="fa-solid fa-moon"></i>
+</button>
+
+<button class="notify-btn">
+   🔔
+</button>
+
+</div>
+</div>
+	
+
+      <div class="topbar">
+        <div>
+          <h1>welcome back Thomas</h1><br><br>
+          <span>Pottery & Ceramic Studio</span>
+          <h2>Creative Dashboard</h2>
+        </div>
+
+        <button>Create Workshop</button>
+      </div>
+
+      <div class="orders-section">
+
+<h2>Recent Orders</h2>
+
+<div class="orders-container">
+
+<div class="order-card">
+<h3>Clay Pot Set</h3>
+<p>Customer: Sarah</p>
+<p>Status: Pending</p>
+</div>
+
+<div class="order-card">
+<h3>Ceramic Mug</h3>
+<p>Customer: John</p>
+<p>Status: Completed</p>
+</div>
+
+<div class="order-card">
+<h3>Handmade Vase</h3>
+<p>Customer: Emma</p>
+<p>Status: Processing</p>
+</div>
+
+</div>
+
+</div>
+<div class="orders-preview">
+
+<h2>Recent Orders</h2>
+
+<div class="order-box">
+    <p>Ceramic Mug - Pending</p>
+</div>
+
+<div class="order-box">
+    <p>Clay Pot - Completed</p>
+</div>
+
+<div class="order-box">
+    <p>Handmade Vase - Processing</p>
+</div>
+
+<button onclick="window.location.href='orders.html'">
+    View All Orders
+</button>
+
+</div>
+</main>
+</div>
+</body>
+</html>
