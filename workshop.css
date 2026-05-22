@@ -74,13 +74,12 @@ button,
     transition:0.3s ease;
 }
 
-/* Hover effect */
+
 .sidebar ul li a:hover{
     transform:translateX(8px);
     box-shadow:0px 5px 15px rgba(0,0,0,0.3);
 }
 
-/* Current active page */
 .sidebar ul li.active a{
     background:#c58a5a;
     font-weight:bold;
@@ -174,13 +173,13 @@ button,
   cursor:pointer;
   border:1px solid #ead8c8;
   box-shadow:0 10px 25px rgba(74,43,25,.07);
-    display:flex;              /* add */
-  justify-content:center;    /* add */
+    display:flex;            
+  justify-content:center;    
   align-items:center;  
 }
 .header-actions button i{
-  color:#fff;                /* add */
-  font-size:18px;            /* add */
+  color:#fff;             
+  font-size:18px;            
 }
 
 .header-actions button:hover{
@@ -192,8 +191,6 @@ button,
 #dirToggle{
   width:72px;
 }
-
-/* TOPBAR */
 .topbar{
   display:flex;
   justify-content:space-between;
